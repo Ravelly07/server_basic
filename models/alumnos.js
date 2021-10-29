@@ -1,5 +1,5 @@
 const { Sequelize, DataTypes} = require('sequelize');
-const db = require('../connection');
+const db = require('../DB/connection');
 const matricula = require('./matricula')
 const alumno = db.define('alumnos', {
     // Model attributes are defined here

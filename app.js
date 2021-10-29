@@ -23,14 +23,14 @@ app.set('view engine', 'pug');
 
 app.use(json());
 
-//routes
-app.use('/api/alumnos',routesAlumnos);
-app.use('/api/matricula',routesMatricula);
-
 app.use('/',(req, res, next) => {
     console.log(`URL: ${req.url}`);
     next();
 });
+
+//routes
+app.use('/api/alumnos',routesAlumnos);
+app.use('/api/matriculas',routesMatricula);
 
 app.get('/',(req,res)=>{
     res.status(200).render('index')

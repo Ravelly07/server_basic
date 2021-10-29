@@ -1,7 +1,7 @@
 const { Sequelize, DataTypes} = require('sequelize');
-const db = require('../connection');
+const db = require('../DB/connection');
 
-const matricula = db.define('matricula', {
+const matricula = db.define("matriculas", {
     // Model attributes are defined here
     ID_MATRICULA: {
       type: DataTypes.INTEGER,
