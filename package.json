@@ -1,16 +1,26 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Prueba node-express-pg-sequelize",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ravelly07/server_basic.git"
+  },
+  "author": "Garret Ravelli",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ravelly07/server_basic/issues"
+  },
+  "homepage": "https://github.com/Ravelly07/server_basic#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "pug": "^3.0.2"
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "pug": "^3.0.2",
+    "sequelize": "^6.8.0"
   }
 }
