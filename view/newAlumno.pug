@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        title Server
+    body
+        form(id= "form" action="/api/alumnos/agregar/" method="post") 
+            div
+                | ID: 
+                input(type='text', id= "ID_ALUMNO", name='ID_ALUMNO',value="",placeholder= "Ingrese el ID del alumno")
+                |          Nombre: 
+                input(type='text', id= "NOMBRE", name='NOMBRE', value="",placeholder= "Ingrese nombre del alumno")
+                |          Apellido: 
+                input(type='text', id= "APELLIDO", name='APELLIDO',value="",placeholder= "Ingrese apellido del alumno")
+            br
+            button(type = "submit") Registrar
+

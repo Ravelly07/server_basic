@@ -50,8 +50,12 @@ app.get('/member/:name/country/:home', (req, res) => {
 	res.render('home', memberDetails);
 });
 
+app.get('/formulario',(req,res) =>{
+    res.status(200).render('newAlumno')
+});
+
 app.all('*',(req,res)=>{
-    res.status(404).send('<h1>resource not found</h1>')//tambien embiamos el estado
+    res.status(404).send('<h1>resource not found (app)</h1>')//tambien embiamos el estado
 });
 
 app.listen(port, host,() => {
